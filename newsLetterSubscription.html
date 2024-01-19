@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        header{
+            background: linear-gradient(to bottom, #545454c9 40%, transparent 90%);
+            padding: 10px;
+            width: 100%;
+            height: 25%;
+            position: fixed;
+            top: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 38px;
+        }
+        .text{
+            font-size: 18px;
+        }
+        .container {
+            max-width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        #subscribeForm {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer{
+            font-size: small;
+            background: #666;
+            color: #fff;
+            text-align: center;
+            padding: 2px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        span {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>THE COMPANY</h1>
+    <p class="text">Subscribe to our news letter and get weekly updates and news about us!!</p>
+</header>
+<div class="container">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form id="subscribeForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+        <button type="button" onclick="subscribe()">Subscribe</button>
+    </form>
+</div>
+<footer>
+    <p>© The Company. All rights reserved.</p>
+    <p><i><span>Project Made By:-</span><br> Aqdas Zishan ,  Ashish Kumar Pandey ,  Anmol Khari ,  Ayush Jindal & Sparsh Verma</i></p>
+</footer>
+
+<script>
+    function subscribe() {
+        var email = document.getElementById("email").value;
+
+        // Simulate email sending (replace this with actual email sending code on the server side)
+        setTimeout(function() {
+            alert("Thanks for subscribing! A confirmation email has been sent to " + email);
+        }, 1000);
+    }
+</script>
+
+</body>
+</html>
