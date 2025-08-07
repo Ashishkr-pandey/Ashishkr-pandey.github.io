@@ -44,9 +44,7 @@ This project was made possible by the following contributors:
 
 - [Aqdas Zishan]()
 - [Ashish Kumar Pandey](#)
-- [Anmol Khari](#)
-- [Ayush Jindal](#)
-- [Sparsh Verma](#)
+
 
 Feel free to reach out to any of the contributors if you have questions or feedback!
 
